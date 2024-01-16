@@ -28,8 +28,9 @@ public class ShooterSubsystem extends SubsystemBase {
   public void configMotors() {
     m_leadMotor.restoreFactoryDefaults();
     m_followMotor.restoreFactoryDefaults();
-    m_followMotor.follow(m_leadMotor, false);
-
+    m_followMotor.follow(m_leadMotor, true);
+    // m_followMotor.setInverted(true); 
+    
   }
 
   /**
@@ -38,6 +39,7 @@ public class ShooterSubsystem extends SubsystemBase {
    */
   public void setMotors(double value) {
     m_leadMotor.set(value);
+    // m_followMotor.set(value);
   }
 
   @Override

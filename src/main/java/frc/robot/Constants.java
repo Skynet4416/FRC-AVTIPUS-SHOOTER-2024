@@ -22,7 +22,7 @@ public final class Constants {
   }
 
   public static class Shooter { 
-    public static final int leadProtoMotorID = 1;
+    public static final int leadProtoMotorID = 3;
     public static final int followProtoMotorID = 2;
   }
 }
